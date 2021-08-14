@@ -4,6 +4,6 @@
 <p>webサイトを作る</p>
 
 PC width size：960px
-※chrome 検証　から幅を960pxにしてからご確認ください。
+<br>※chrome 検証　から幅を960pxにしてからご確認ください。
 
 phone size：Galaxy S5(360×640)
