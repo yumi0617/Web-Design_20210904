@@ -160,11 +160,6 @@ article{
     margin: 20px auto;
 }
 
-
-
-
-
-
 .information{
     display: flex;
     align-items: center;
@@ -275,7 +270,6 @@ article{
 .yellow-link:hover{
     background-color:rgba(208,175,76,0.7);
 }
-
 
 .topics{
     height: 450px;
@@ -424,8 +418,6 @@ article{
     right: 0;
 }
 
-
-
 .popup {
     z-index: 3;
     background-color: #efefef;
@@ -438,7 +430,7 @@ article{
     bottom: 0;
     margin: auto;
     width: 70vw;
-    height: 55vw;
+    height: 40vw;
   }
 
   #popup-on{
@@ -462,11 +454,6 @@ article{
     margin: 40px auto 40px auto;
     width: 90%;
   }
-
-
-
-
-
 
 .sky-picture img{
     width: 250px;
@@ -597,22 +584,13 @@ article{
     font-weight: bold;
     font-size: 18px;
     margin: 80px 0 0 80px;
-
 }
-
-
-
-
-
-
-
-
 
 @media only screen and (max-width: 600px){
     body{ 
         font-size: 14px;
     }
-    
+
     .header-rogo-img{
         text-align: center;
     }
@@ -623,11 +601,9 @@ article{
         width: 20%;
     }
 
-
     .hamburger-menu{
         display: block;
     }
-
 
     .menu-btn {
         position: absolute;
@@ -684,7 +660,7 @@ article{
 
     #menu-btn-check:checked ~ .hamburger-menu-contents {
         bottom: -50px;
-    }
+    }   
 
     .hamburger-menu-contents ul {
         padding: 30px 10px 0;
@@ -704,7 +680,7 @@ article{
     #menu-btn-check{
         display: none;
     }
-    
+
     .header-menu{
         width: 360px;
         height: 300px;
@@ -724,50 +700,37 @@ article{
         display: none;
     }
 
+    #css-slider{
+        display: block;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        overflow: hidden;
+    }
 
+    .slidein{
+        float: left;
+        width: 400px;
+        height: 200px;
+        position: relative;
+    }
 
+    .slider-wrapper{
+        width: 500%;
+        position: relative;
+        left: 0;
+        margin: 20px 0;
+        will-change: transform;
+        animation: slider 10s infinite;
+    }
 
-
-#css-slider{
-    display: block;
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    overflow: hidden;
-}
-
-.slidein{
-    float: left;
-    width: 400px;
-    height: 200px;
-    position: relative;
-}
-
-.slider-wrapper{
-    width: 500%;
-    position: relative;
-    left: 0;
-    margin: 20px 0;
-    will-change: transform;
-    animation: slider 10s infinite;
-}
-
-@keyframes slider {
-    0% { transform: translateX(0); }
-    25% { transform: translateX(-400px); }
-    50% { transform: translateX(-800px); }
-    75% { transform: translateX(-1200px); }
-    100% { transform: translateX(0); }
-}
-
-
-
-
-
-
-
-
-
+    @keyframes slider {
+        0% { transform: translateX(0); }
+        25% { transform: translateX(-400px); }
+        50% { transform: translateX(-800px); }
+        75% { transform: translateX(-1200px); }
+        100% { transform: translateX(0); }
+    }
 
     .main-pictures{
         height: 450px;
@@ -779,10 +742,6 @@ article{
         margin: 30px;
     }
 
-
-
-
-    
     .information{
         display: block;
         height: 300px;
@@ -861,16 +820,14 @@ article{
     .pc-area p{
         width: 300px;
         margin: 10px 0 30px 20px;
-        font-size: 14px;
     }
 
     .pc-area a{
         margin: 0 0 0 1.5em;
-        font-size: 14px;
     }
 
     .sp-area { 
-        display:block!important; 
+        display:block;
     }
 
     .sp-area h2{
@@ -891,22 +848,18 @@ article{
         border: 20px solid #c88442;
         right: -40px;
         top: 0;
-        border-right-width: 20px;
         border-right-color: transparent;;
-        display: block;
     }
 
     .sp-area p{
         float: left;
         width: 40%;
-        font-size: 14px;
         text-align: left;
         margin: 10px 0 10px 20px;
     }
     
     .sp-area a{
         display: inline-block;
-        clear: left;
         margin:20px 0;
         width: 35%;
         font-size: 14px;
@@ -920,13 +873,11 @@ article{
 
     .topics-flex{
         display: block;
-        justify-content: center;
     }
 
     .topics{
     height: 1250px;
     background-color: #434343;
-
 }
 
     .topics-contents{
@@ -945,7 +896,7 @@ article{
     }
 
     .button-sp-area{
-        display:block!important; 
+        display:block; 
     }
 
     .button-sp-area{
@@ -971,7 +922,6 @@ article{
     .sky-picture-sp-area{
         display: block;
         background-color: #fff;
-        width: 100%;
         height: 420px;
     }
 
@@ -979,11 +929,11 @@ article{
         width: 250px;
         height: 150px;
         object-fit: cover;
-        margin: 30px;
+        margin: 30px 30px 10px 30px;
     }
 
     .sky-picture-sp-area h2{
-        line-height: 40px;
+        line-height: 40px;  
         width: 270px;
         position: relative;
         font-size: 15px;
@@ -1000,75 +950,74 @@ article{
         border: 20px solid #c88442;
         right: -40px;
         top: 0;
-        border-right-width: 20px;
         border-right-color: transparent;;
-        display: block;
     }
 
     .sky-picture-sp-area p{
         width: 90%;
         font-size: 14px;
-        text-align: left;
+        text-align: left;   
         margin: 10px 0 10px 20px;
     }
 
 
+    
 
-
-
-
-
-    .pop-box{
-        float: left;
+    .sky-picture-sp-area .pop-box{
         width: 250px;
         height: 30px;
     }
 
-    .pop-box a{
-        display: inline-block;
+    .sky-picture-sp-area .pop-box a{
         font-size: 12px;
         padding: 6px 0;
-        color: #fff;
     }
 
-    .btn-open i{
-        color: #fff;
+    .sky-picture-sp-area .btn-open i{
         margin: 8px;
     }   
 
-
-
-    .popup {
+    .sky-picture-sp-area .popup {
         z-index: 3;
-        position: fixed;
-        display: none;
         width: 80vw;
         height: 150vw;
+        background-color: #efefef;
+        box-shadow: 0 0 0 9999px rgba(0, 0, 0, .8);
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+      }
+
+    #popup-on{
+        display: none;
+      }
+
+    #popup-on:checked + .popup{
+        display: block;
+    }
+
+    .sky-picture-sp-area .icon-close{
+        background: #000;
+        color: #fff;
+        font-size: 30px;
+        padding: 0 10px;
+        position: absolute;
+        right: 0;
       }
       
-      .popup-content img{
+    .sky-picture-sp-area .popup-content img{
         margin: 40px auto 40px auto;
         width: 80%;
+    }
+
+    .sky-picture-sp-area .popup-content{
+        margin: 40px auto 40px auto;
+        width: 90%;
       }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     .contents-box{
         display: block;
@@ -1076,7 +1025,6 @@ article{
     }
 
     .contents-box img{
-        margin: 30px 0 0 0;
         width: 250px;
         height: 250px;
         object-fit: cover;
@@ -1084,11 +1032,7 @@ article{
     
     .contents-box p{
         margin: 0 10px 0 60px;
-        color: #fff;
-        font-weight: bold;
         font-size: 16px;
-        width: 60%;
-        text-align: left;
     }
 
     .zippo-ps-area{
@@ -1118,25 +1062,12 @@ article{
         margin: 0 15px;
     }
     
-    .contents-box-2 h4::after{
-        position: absolute;
-        content: '';
-        border: 25px solid #c88442;
-        right: -40px;
-        border-right-width: 20px;
-        border-right-color: transparent;;
-    }
-    
     .contents-box-2-item{
-        text-align: center;
         width: 350px;
-        margin: 0;
     }
 
     .contents-box-2-item p{
-        width: 300px;
-        margin: 20px 15px;
-        text-align: left;
+        margin: 10px 15px;
     }
 
     .contents-box-2-item a{
